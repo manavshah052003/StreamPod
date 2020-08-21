@@ -1,0 +1,56 @@
+<!doctype html>
+
+
+<html>
+
+<head>
+    <title>AudioBook Player</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/mac/Desktop/6-sem/css/audioplayer.css" />
+</head>
+
+<body>
+
+
+    <nav id="nav">
+
+        <div onclick="opensearch()" class="search icon">
+            <i class="material-icons">search</i>
+        </div>
+    </nav>
+    <div id="sbar" class="searchbar">
+        <div onclick="closesearch()" class="back icon">
+            <i class="material-icons">arrow_back</i>
+        </div>
+        <input oninput="search()" placeholder="😣" id="inp">
+    </div>
+    <div class="banner">
+        <div id="text" class="text">
+
+        </div>
+    </div>
+    <div id="container" class="container">
+    </div>
+    <div class="con">
+
+        <div id="loadmusic" class="loadingmusic">
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="pre" class="preloader">
+            <div class="loaders">
+            </div>
+        </div>
+        <script src="/Users/mac/Desktop/6-sem/js/audioplayer.js"></script>
+
+</body>
+
+</html>

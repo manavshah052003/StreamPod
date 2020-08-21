@@ -1,0 +1,299 @@
+body {
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.userProfile {
+    position: absolute;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30em;
+    height: 15em;
+    box-shadow: 0em 0em 1em .1em gray;
+    border-radius: .3em;
+}
+
+.user {
+    position: absolute;
+    background-color: white;
+    height: 9em;
+    top: 3em;
+    right: 2em;
+    width: 9em;
+    border-radius: 6em;
+    background: url("https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-10-3-512.png");
+    background-size: cover;
+    background-color: darkgray;
+    text-align: center;
+    z-index: 1;
+}
+
+.user p {
+    margin: 0;
+}
+
+.user i {
+    color: white;
+}
+
+.user i:hover {
+    color: lightgray;
+}
+
+.parameter {
+    display: none;
+    color: white;
+    transition: all .5s ease .1s;
+}
+
+.post {
+    display: none;
+    color: white;
+    transition: all .5s ease .1s;
+}
+
+.param {
+    display: none;
+    color: white;
+    transition: all .5s ease .1s;
+}
+
+.proj {
+    display: none;
+    color: white;
+    transition: all .5s ease .1s;
+}
+
+.menuO {
+    display: inline;
+    position: absolute;
+    top: -2.2em;
+    left: 1.2em;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -moz-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -ms-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -o-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: linear-gradient(to bottom, #ffffff, #d1d1d1);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: .5em .5em;
+    border-radius: .5em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s ease .1s;
+}
+
+.menu1 {
+    display: inline;
+    position: absolute;
+    bottom: 3em;
+    right: -4em;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -moz-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -ms-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -o-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: linear-gradient(to bottom, #ffffff, #d1d1d1);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: .5em .5em;
+    border-radius: .5em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s ease .1s;
+}
+
+.menu2 {
+    display: inline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3em;
+    left: -4.5em;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -moz-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -ms-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -o-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: linear-gradient(to bottom, #ffffff, #d1d1d1);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: .5em .5em;
+    border-radius: .5em;
+    text-decoration: none;
+    z-index: 0;
+    transition: all .5s ease .1s;
+}
+
+.menu3 {
+    display: inline;
+    cursor: pointer;
+    position: absolute;
+    bottom: -2.2em;
+    left: .6em;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -moz-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -ms-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: -o-linear-gradient(top, #ffffff, #d1d1d1);
+    background-image: linear-gradient(to bottom, #ffffff, #d1d1d1);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: .5em .5em;
+    border-radius: .5em;
+    text-decoration: none;
+    z-index: 0;
+    transition: all .5s ease .1s;
+}
+
+.user:hover {
+    opacity: .9;
+}
+
+.Name {
+    margin-top: 2.2em;
+    margin-left: 3.4em;
+    margin-bottom: 0;
+    display: inline-block;
+    color: black;
+    font-size: 2em;
+    transition: all .5s ease .1s;
+}
+
+.info p {
+    font-size: .8em;
+    margin-left: 1em;
+    margin-top: .7em;
+    margin-bottom: .02em;
+    padding-bottom: 0;
+    z-index: 2;
+}
+
+.Surname {
+    margin-left: 3.5em;
+    margin-top: .2em;
+    display: inline-block;
+    color: black;
+    font-size: 2em;
+    transition: all .5s ease .1s;
+}
+
+.info {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 2em;
+    height: .2em;
+    border-top: .05em solid darkgray;
+    border-bottom: .05em solid darkgray;
+    width: 15em;
+    background: white;
+    transition: all .5s ease .1s;
+    z-index: 3;
+}
+
+.userProfile:hover .info {
+    height: 9em;
+    transition: all .5s ease .8s;
+    z-index: 1;
+}
+
+.userProfile:hover .Name {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    transition: all .5s ease .1s;
+}
+
+.info ul li {
+    margin-left: 0em;
+    margin-top: 0em;
+    display: inline-block;
+}
+
+i {
+    outline: none;
+    margin-right: .2em;
+    margin-left: 0;
+    font-size: 1em;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+}
+
+i:hover {
+    color: gray;
+}
+
+.tags {
+    font-size: .59em;
+    background-color: lightgray;
+    color: white;
+    padding: .5em;
+    padding-bottom: .3em;
+    margin-left: 1em;
+    border-radius: 2em;
+}
+
+.more {
+    background: lightblue;
+    cursor: pointer;
+    font-size: .6em;
+    border-radius: 100%;
+    padding: .5em;
+    padding-bottom: .3em;
+    width: 1em;
+    height: 1em;
+}
+
+.info ul {
+    padding-left: 1em;
+    margin-top: .3em;
+}
+
+.success {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: -.5em;
+    margin-top: .3em;
+    height: 1em;
+    width: 1em;
+    background-color: darkgray;
+    border-radius: 10em;
+    cursor: pointer;
+}

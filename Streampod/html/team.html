@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Our Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="/Users/mac/Desktop/6-sem/css/team.min.css" />
+    <link rel="stylesheet" href="/Users/mac/Desktop/6-sem/css/team.css" />
+</head>
+
+<body>
+    <h1>Our Team</h1>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://thumbs2.imgbox.com/6b/23/OV2agSzY_t.jpeg" height="300px" width="300px" />
+                </div>
+                <div class="details">
+                    <h3>Manav Shah<br /><span>Full Stack Developer</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://thumbs2.imgbox.com/a4/71/JqQByezv_t.jpg" height="300px" width="300px" />
+                </div>
+                <div class="details">
+                    <h3>Vanav Shah<br /><span>Full Stack Developer</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://thumbs2.imgbox.com/86/f6/JKevI3K9_t.jpeg" height="300px" width="300px" />
+                </div>
+                <div class="details">
+                    <h3>Kalp Sanghavi<br /><span>Documentation</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://thumbs2.imgbox.com/b2/2a/otufAatM_t.jpeg" height="300px" width="300px" />
+                </div>
+                <div class="details">
+                    <h3>Harsh Shah<br /><span>Documentation</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="/Users/mac/Desktop/6-sem/js/team.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 60,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
